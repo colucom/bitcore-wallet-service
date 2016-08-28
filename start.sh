@@ -13,7 +13,7 @@ run_program ()
   if [ -e "$pidfile" ]
   then
     echo "$nodefile is already running. Run 'npm stop' if you wish to restart."
-    return 0
+    return 1
   fi
 
   nohup node $nodefile >> $logfile 2>&1 &
