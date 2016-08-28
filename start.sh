@@ -16,7 +16,7 @@ run_program ()
   #   return 0
   # fi
 
-  nohup node $nodefile >> 2>&1 &
+  nohup node $nodefile >> &
   # PID=$!
   # if [ $? -eq 0 ]
   # then
