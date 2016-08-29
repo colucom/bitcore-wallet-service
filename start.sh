@@ -1,8 +1,5 @@
 #!/bin/bash
 
-mkdir -p logs
-mkdir -p pids
-
 # run_program (nodefile, pidfile, logfile)
 run_program ()
 {
@@ -16,7 +13,7 @@ run_program ()
   #   return 0
   # fi
 
-  nohup node $nodefile &
+  node $nodefile &
   # PID=$!
   # if [ $? -eq 0 ]
   # then
